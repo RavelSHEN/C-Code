@@ -9,7 +9,7 @@
 #include <iostream>
 using namespace std;
 int main() {
-    int n; // n为细菌的数量
+    int n;  // n为细菌的数量
     // id记录细菌的编号, rate记录细菌的繁殖率，第i个细菌对应id[i]和rate[i]
     int id[100];
     double rate[100];
@@ -18,7 +18,7 @@ int main() {
     for (int i = 0; i < n; i++) {
         int initial, final;
         cin >> id[i] >> initial >> final;
-        rate[i] = (double)final / initial;
+        rate[i] = static_cast<double>(final / initial);
     }
 
     // 对整个细菌排序
