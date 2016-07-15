@@ -6,8 +6,6 @@ int main() {
     cin >> n;
     int highest = 0;
     int markArray[n];
-
-
     for ( int i = 0; i < n; i++ ) {
         cin >> markArray[i];
     }
